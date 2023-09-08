@@ -2,8 +2,8 @@ pragma solidity ^0.8.0;
 
 import "./IERC20.sol";
 import "../Utils.sol";
-import "openzeppelin-solidity/contracts/utils/math/SafeMath.sol";
-import "openzeppelin-solidity/contracts/utils/Strings.sol";
+import "@openzeppelin/contracts/utils/math/SafeMath.sol";
+import "@openzeppelin/contracts/utils/Strings.sol";
 
 
 contract ERC20Token is IERC20

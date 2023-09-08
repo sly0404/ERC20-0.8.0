@@ -16,8 +16,8 @@ contract TestERC20
     address private constant _ACCOUNT_0 = 0x25075f2Adf4A1dFed4DffeFb9747112cA5C168d3;
     
     //represente msg.sender lorsqu'on l'apelle de XToken(DeployedAddresses.XToken()).
-    address private constant _MSG_SENDER = 0x4E72770760c011647D4873f60A3CF6cDeA896CD8; //"0x4E72770760c011647D4873f60A3CF6cDeA896CD8"
-    
+    address private constant _MSG_SENDER = 0xbaAA2a3237035A2c7fA2A33c76B44a8C6Fe18e87; //"0xbaAA2a3237035A2c7fA2A33c76B44a8C6Fe18e87"
+     
     //represente msg.sender lorsqu'on l'apelle de ce contrat.
     //lorsque l'initialisation est faite, on a _balances[_MSG_SENDER_DIRECT] ==  TOKENS_TOTAL_QUANTITY.
     //address private constant _MSG_SENDER_DIRECT = 0x627306090abab3a6e1400e9345bc60c78a8bef57;
@@ -58,7 +58,7 @@ contract TestERC20
     function testXTokenMsgSender() public
     {
         address msgSender = xToken.getMsgSender();
-        //ici msg.sender == 0x4E72770760c011647D4873f60A3CF6cDeA896CD8
+        //ici msg.sender == 0xbaaa2a3237035a2c7fa2a33c76b44a8c6fe18e87
         string memory msgSendertoSring = addressToString(msgSender);
         string memory errorMessage = concatenate(errorTestMsgSender, msgSendertoSring);
         Assert.equal(msgSender, _MSG_SENDER, errorMessage);

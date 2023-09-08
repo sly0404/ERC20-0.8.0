@@ -13,3 +13,10 @@ token.callGasCost()
 
 token = await VToken.deployed()
 token.transfer("0x25075f2adf4a1dfed4dffefb9747112ca5c168d1", 2000)
+
+token.totalSupply()
+
+token.balanceOf("0x1DA418EaAB4328d6648cEC391C4Accd47D689A54")
+
+
+token.getMsgSender()
